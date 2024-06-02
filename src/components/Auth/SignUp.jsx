@@ -1,4 +1,3 @@
-// src/pages/SignupPage.js
 import React, { useState } from "react";
 import axios from "axios";
 import "./SignupPage.css";
@@ -45,7 +44,7 @@ const SignupPage = () => {
       };
 
       const { data } = await axios.post(
-        "/api/auth/signup",
+        "https://fmovies-3.onrender.com/api/auth/signup",
         {
           name,
           email,

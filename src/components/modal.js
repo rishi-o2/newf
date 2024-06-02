@@ -23,7 +23,9 @@ function ModalComponent({ isOpen, onClose }) {
   useEffect(() => {
     const fetchWishlistMovieIds = async () => {
       try {
-        const response = await axios.get(`/api/wishlist/${userId}`);
+        const response = await axios.get(
+          `https://fmovies-3.onrender.com/api/wishlist/${userId}`
+        );
         setWishlistMovieIds(response.data);
       } catch (error) {
         console.error("Error fetching wishlist movie IDs:", error);

@@ -52,10 +52,13 @@ const Banner = () => {
   const addToWishlist = async () => {
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
-      const response = await axios.post("/api/wishlist/add", {
-        userId: userInfo.id,
-        movieId: movie.imdbID,
-      });
+      const response = await axios.post(
+        "https://fmovies-3.onrender.com/api/wishlist/add/api/wishlist/add",
+        {
+          userId: userInfo.id,
+          movieId: movie.imdbID,
+        }
+      );
       toast({
         title: "Movie added to wishlist",
         status: "success",

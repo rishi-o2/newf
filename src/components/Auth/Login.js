@@ -1,4 +1,3 @@
-// src/pages/LoginPage.js
 import React, { useState } from "react";
 import axios from "axios";
 import "./Login.css";
@@ -35,7 +34,7 @@ const LoginPage = () => {
       };
 
       const { data } = await axios.post(
-        "/api/auth/login",
+        "https://fmovies-3.onrender.com/api/auth/login",
         { email, password },
         config
       );
