@@ -34,7 +34,7 @@ const LoginPage = () => {
       };
 
       const { data } = await axios.post(
-        "https://fmovies-3.onrender.com/api/auth/login",
+        "https://fmovies-4.onrender.com/api/auth/login",
         { email, password },
         config
       );

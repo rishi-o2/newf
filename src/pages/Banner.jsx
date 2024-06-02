@@ -53,7 +53,7 @@ const Banner = () => {
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       const response = await axios.post(
-        "https://fmovies-3.onrender.com/api/wishlist/add/api/wishlist/add",
+        "https://fmovies-4.onrender.com/api/wishlist/add",
         {
           userId: userInfo.id,
           movieId: movie.imdbID,

@@ -44,7 +44,7 @@ const SignupPage = () => {
       };
 
       const { data } = await axios.post(
-        "https://fmovies-3.onrender.com/api/auth/signup",
+        "https://fmovies-4.onrender.com/api/auth/signup",
         {
           name,
           email,
