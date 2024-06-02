@@ -1,0 +1,64 @@
+/* HomePage.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #141414, #1a1a1a);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.home-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #e50914;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.button-group button {
+    width: 45%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #c5060c;
+}
+
+.button-group button:first-child {
+    margin-right: 1rem;
+}
+
+/* Add some Netflix-like styles */
+
+.home-container {
+    background-image: url("https: //help.nflxext.com/43e0db2f-fea0-4308-bfb9-09f2a88f6ee4_what_is_netflix_1_en.png");
+    /* Replace with your own background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.home-container h1 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.button-group button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

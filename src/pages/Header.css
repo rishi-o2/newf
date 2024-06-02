@@ -1,0 +1,58 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    transition: 0.5s;
+    z-index: 10000;
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid var(--primary);
+    border-image: linear-gradient(90deg, transparent, var(--primary), transparent) 30;
+    backdrop-filter: blur(20px);
+    padding: 10px 10px;
+}
+
+.logo {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 35px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+}
+
+
+.modal-container {
+    position: absolute;
+    top: 35px;
+    left:120% ;
+}
+.your-list-button {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.your-list-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
